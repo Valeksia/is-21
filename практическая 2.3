@@ -1,0 +1,39 @@
+v=int(input())
+x=float(input())
+if v==1:
+    a=0.4
+    b=2.3
+    from math import*
+    z=exp(2*x)
+    if x<3.5*a:
+        y=a*b*x-cos((z*x)**2)
+    elif x>b:
+        y=sqrt(b*x-a+z*x**2)
+    else:
+        y=(a-x)**2-log(x+z)
+    print ("отв=", round(y,2))
+elif v==2:
+    a=0.2
+    b=0.8
+    from math import*
+    z=exp(x)
+    if x<3.5*a:
+        y=a*b*x-cos((z*x)**2)
+    elif x>b:
+        y=sqrt(b*x-a+z*x**2)
+    else:
+        y=(a-x)**2-log(x+z)
+    print ("отв=", round(y,2))
+elif v==3:
+    a=0.7
+    b=8.1 
+    z=0.8
+    from math import*
+    if x<3.5*a:
+        y=a*b*x-cos((z*x)**2)
+    elif x>b:
+        y=sqrt(b*x-a+z*x**2)
+    else:
+        y=(a-x)**2-log(x+z)
+    print ("отв=", round(y,2))
+else: print("неверно указан вариант")
